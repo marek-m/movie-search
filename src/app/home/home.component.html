@@ -1,0 +1,5 @@
+<p>
+  <input type="text" [value]="value" (keyup)="search.emit($event.target.value)"/>
+</p>
+
+<my-about [movies]="result$ | async" [searchQuery]="searchQuery$ | async" [loading]="loading$ | async"></my-about>
